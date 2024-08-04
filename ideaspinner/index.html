@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idea Spinner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Idea Spinner</h1>
+        </header>
+        <main>
+            <section id="idea-management">
+                <div id="idea-input">
+                    <input type="text" id="new-idea" placeholder="Enter an idea">
+                    <select id="category-select">
+                        <option value="">Select Category</option>
+                        <option value="work">Work</option>
+                        <option value="personal">Personal</option>
+                        <option value="hobby">Hobby</option>
+                    </select>
+                    <button id="add-idea"><i class="fas fa-plus"></i> Add Idea</button>
+                </div>
+                <div id="idea-list-container">
+                    <h2>Your Ideas</h2>
+                    <ul id="idea-list"></ul>
+                </div>
+            </section>
+            <section id="spinner-section">
+                <canvas id="spinner" width="500" height="500"></canvas>
+                <button id="spin-button"><i class="fas fa-sync-alt"></i> Spin!</button>
+            </section>
+        </main>
+        <section id="selected-idea">
+            <h2>Selected Idea</h2>
+            <p id="selected-idea-text">Spin to select an idea!</p>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
